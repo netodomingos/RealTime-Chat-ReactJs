@@ -23,16 +23,18 @@ const Join = () => {
                     <div className='input-div one focus'>
                         <div className='username-container'>
                             <h5>Username</h5>
-                            <input className='input' type='text' />
+                            <input className='input' type='text' onChange={(event) => setName(event.target.value)} />
                         </div>
                     </div>
                     <div className='input-div two focus'>
                         <div className='comunity-container'>
-                            <h5>comunity</h5>
-                            <input className='input' type='text' />
+                            <h5>Comunity</h5>
+                            <input className='input' type='text' onChange={(event) => setRoom(event.target.value)} />
                         </div>
                     </div>
-                    <input type='submit' className='btn' value='Sign In' />
+                        <Link to={`/Chat?name=${name}&room=${room}`} onClick={event => (!name || !room) ? event.preventDefault() : null}>
+                            <input type='submit' className='btn' value='Sign In'/>
+                        </Link>
                 </form>
             </div>
         </div >

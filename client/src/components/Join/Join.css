@@ -135,7 +135,7 @@ form h2 {
     background-size: 200%;
     transition: .5s;
     text-transform: uppercase;
-
+    text-decoration: none;
 }
 
 .btn:hover{
