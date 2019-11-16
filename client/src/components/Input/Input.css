@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    border-top: 2px solid #D3D3D3;
+}
+  
+  input{
+    border-radius: 4px;
+    height: 30px;
+    border-color: #38d39f;
+    border: 3px none none none;
+    padding-right: 230px;
+}
+
+  button{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: none;
+    background-color: #38d39f;
+    padding: 6px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.308);
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 2px;
+}
+
+@media screen and (max-width: 1000px){
+  input{
+    padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  input{
+    padding-right: 155px;
+  }
+}

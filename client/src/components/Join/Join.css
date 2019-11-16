@@ -9,6 +9,14 @@ body{
     
 }
 
+.wave {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 .join-container{
     width: 100vh;
     height: 100vh;
@@ -121,7 +129,7 @@ form h2 {
 
 .btn{
     display: block;
-    width: 100%;
+    width: 350px;
     height: 50px;
     border-radius: 25px;
     margin: 1rem 0;
@@ -137,7 +145,6 @@ form h2 {
     text-transform: uppercase;
     text-decoration: none;
 }
-
 .btn:hover{
     background-position: right;
 }
@@ -163,6 +170,15 @@ form h2 {
 }
 
 @media screen and (max-width: 900px){
+    .wave{
+        height: 0;
+    }
+    h5{
+        color: black;
+    }
+    .btn{
+        width: 280px;
+    }
     .img{
         display: none;
     }
